@@ -139,7 +139,7 @@ if (isset($_POST['order'])) {
       echo '<p class="empty">your cart is empty!</p>';
    }
    ?>
-   <div class="grand-total">grand total : <span>$<?= $cart_grand_total; ?>/-</span></div>
+   <div class="grand-total">grand total : <span>₹<?= $cart_grand_total; ?>/-</span></div>
 </section>
 
 <section class="checkout-orders">

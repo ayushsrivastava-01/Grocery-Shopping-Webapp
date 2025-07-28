@@ -101,7 +101,7 @@ if(isset($_GET['delete_all'])){
       <a href="view_page.php?pid=<?= $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
       <img src="uploaded_img/<?= $fetch_wishlist['image']; ?>" alt="">
       <div class="name"><?= $fetch_wishlist['name']; ?></div>
-      <div class="price">$<?= $fetch_wishlist['price']; ?>/-</div>
+      <div class="price">₹<?= $fetch_wishlist['price']; ?>/-</div>
       <input type="number" min="1" value="1" class="qty" name="p_qty">
       <input type="hidden" name="pid" value="<?= $fetch_wishlist['pid']; ?>">
       <input type="hidden" name="p_name" value="<?= $fetch_wishlist['name']; ?>">
@@ -119,7 +119,7 @@ if(isset($_GET['delete_all'])){
    </div>
 
    <div class="wishlist-total">
-      <p>grand total : <span>$<?= $grand_total; ?>/-</span></p>
+      <p>grand total : <span>₹<?= $grand_total; ?>/-</span></p>
       <a href="shop.php" class="option-btn">continue shopping</a>
       <a href="wishlist.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>">delete all</a>
    </div>
